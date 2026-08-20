@@ -11,13 +11,13 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 LUNARIS_BUILD_TYPE := UNOFFICIAL
 SURFACE_FLINGER_BOOST := true
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 TARGET_USE_MAPS := true
 TARGET_USE_FILES := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 #GMS
-WITH_GMS := true
+WITH_GMS := false
 
 # Inherit MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
